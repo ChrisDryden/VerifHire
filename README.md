@@ -19,4 +19,4 @@ This program gives Companies and Educational institutions a way to confirm that 
 
 Credits:
 
-Builds upon work from the medical records project and website themes from Cordiero.
+Builds upon work from the medical records project a public voting app project and website themes from Cordiero.
