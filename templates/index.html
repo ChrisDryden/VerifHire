@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <title>Hello World DApp</title>
+    </head>
+    <body class="container">
+
+        <div class="row">
+            <div class="col">
+                <h1>A Simple Hello World Voting Application</h1>
+                {% if alert %}
+                    <div class="alert alert-warning">
+                        {{ alert }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Candidate</th>
+                            <th>Votes</th>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <form action="/add_user" method="post">
+                    <div class="form-group row">
+                        <label for="candidateInput" class="col-md-3 col-form-label">User Name:</label>
+                        <div class="col-md-3">
+                            <input id="userInput" type="text" name="user" class="form-control" required/>
+                        </div>
+                        <br><br>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary">Add</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form action="/add_provider" method="post">
+                    <div class="form-group row">
+                        <label for="candidateInput" class="col-md-3 col-form-label">Provider Name:</label>
+                        <div class="col-md-3">
+                            <input id="providerInput" type="text" name="provider" class="form-control" required/>
+                        </div>
+                        <br><br>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary">Add</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
